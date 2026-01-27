@@ -1,1 +1,1 @@
-### Mening bu yerdagi baxtli kunlarim!
+### Mening bu yerdagi baxtli kunlarim hali tugamaydi!
