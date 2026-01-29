@@ -1,0 +1,4 @@
+It is also possible to save the output
+of a command to a variable and the mechanis
+we use for that is the backtick
+Typically you'll find the backtick on the keybard to the left
