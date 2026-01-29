@@ -1,3 +1,3 @@
 ### 29-01-2026
 
-#### 2-dars Git bilan ishlash
+#### 2-dars Git bilan ishlash boshlandi
