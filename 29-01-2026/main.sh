@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-echo "DevOps o'rgan"
+echo "DevOps o'rganing"
