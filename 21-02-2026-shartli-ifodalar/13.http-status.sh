@@ -1,8 +1,8 @@
 #!/bin/bash
-status=$(curl -s -o /dev/null -w "%{http_code}" http://localhost)
+status=$(curl -s -o /dev/null -w "%{http_code}" https://lms.itechacademy.uz)
 if [ "$status" -eq 200 ]
 then
-   echo "OK"
+   echo "Server ishlayapti"
 elif [ "$status" -eq 404 ]
 then
    echo "Not Found"
