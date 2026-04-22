@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: user        # Optional: Defaults to 'postgres'
+      POSTGRES_PASSWORD: password # Required
+      POSTGRES_DB: mydatabase    # Optional: Defaults to value of POSTGRES_USER
+    ports:
+      - "5432:5432"              # Map host port 5432 to container port 5432
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
+
+#docker run -e POSTGRES_USER=user -e POSTGRESQ_PASSWORD=password -p 5432:5432--restart always -v pgdata:/var/lib/postgresq;/data postgres
