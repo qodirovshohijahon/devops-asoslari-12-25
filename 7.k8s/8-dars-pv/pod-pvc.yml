@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-devops
+  labels:
+    app: pod-devops
+spec:
+  containers:
+    - name: container-devops
+      image: nginx:latest
+      volumeMounts:
+          - mountPath: /usr/share/nginx/html
+            name: devops-storage
+  volumes:
+    - name: devops-storage
+      persistentVolumeClaim:
+        claimName: pvc-devops

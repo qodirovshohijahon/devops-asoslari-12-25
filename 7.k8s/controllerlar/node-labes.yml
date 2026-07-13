@@ -1,0 +1,185 @@
+apiVersion: v1
+kind: Node
+metadata:
+  annotations:
+    node.alpha.kubernetes.io/ttl: "0"
+    volumes.kubernetes.io/controller-managed-attach-detach: "true"
+  creationTimestamp: "2026-06-19T10:33:34Z"
+  labels:
+    beta.kubernetes.io/arch: arm64
+    beta.kubernetes.io/os: linux
+    disk: ssd
+    hardware: local_gpu
+    kubernetes.io/arch: arm64
+    kubernetes.io/hostname: minikube
+    kubernetes.io/os: linux
+    minikube.k8s.io/commit: c93a4cb9311efc66b90d33ea03f75f2c4120e9b0
+    minikube.k8s.io/name: minikube
+    minikube.k8s.io/primary: "true"
+    minikube.k8s.io/updated_at: 2026_06_19T15_33_52_0700
+    minikube.k8s.io/version: v1.38.1
+    node-role.kubernetes.io/control-plane: ""
+    node.kubernetes.io/exclude-from-external-load-balancers: ""
+    zone: uzbekistan
+  name: minikube
+  resourceVersion: "103796"
+  uid: 0c439a9e-61ee-49e2-beac-530b57b3e320
+spec:
+  podCIDR: 10.244.0.0/24
+  podCIDRs:
+  - 10.244.0.0/24
+status:
+  addresses:
+  - address: 192.168.49.2
+    type: InternalIP
+  - address: minikube
+    type: Hostname
+  allocatable:
+    cpu: "8"
+    ephemeral-storage: 1055761844Ki
+    hugepages-1Gi: "0"
+    hugepages-2Mi: "0"
+    hugepages-32Mi: "0"
+    hugepages-64Ki: "0"
+    memory: 4013032Ki
+    pods: "110"
+  capacity:
+    cpu: "8"
+    ephemeral-storage: 1055761844Ki
+    hugepages-1Gi: "0"
+    hugepages-2Mi: "0"
+    hugepages-32Mi: "0"
+    hugepages-64Ki: "0"
+    memory: 4013032Ki
+    pods: "110"
+  conditions:
+  - lastHeartbeatTime: "2026-07-06T10:11:58Z"
+    lastTransitionTime: "2026-06-29T10:37:10Z"
+    message: kubelet has sufficient memory available
+    reason: KubeletHasSufficientMemory
+    status: "False"
+    type: MemoryPressure
+  - lastHeartbeatTime: "2026-07-06T10:11:58Z"
+    lastTransitionTime: "2026-06-29T10:37:10Z"
+    message: kubelet has no disk pressure
+    reason: KubeletHasNoDiskPressure
+    status: "False"
+    type: DiskPressure
+  - lastHeartbeatTime: "2026-07-06T10:11:58Z"
+    lastTransitionTime: "2026-06-29T10:37:10Z"
+    message: kubelet has sufficient PID available
+    reason: KubeletHasSufficientPID
+    status: "False"
+    type: PIDPressure
+  - lastHeartbeatTime: "2026-07-06T10:11:58Z"
+    lastTransitionTime: "2026-06-29T10:37:10Z"
+    message: kubelet is posting ready status
+    reason: KubeletReady
+    status: "True"
+    type: Ready
+  daemonEndpoints:
+    kubeletEndpoint:
+      Port: 10250
+  images:
+  - names:
+    - mysql@sha256:7dcddc01f13bab2f15cde676d44d01f61fc9f99fe7785e86196dfc07d358ae2b
+    - mysql:8.0
+    sizeBytes: 794883199
+  - names:
+    - fluentd@sha256:df0e4d5685d84d2b2b0423ce4e1fa38866eaf93f23875726609d5b80dce37dca
+    - fluentd:latest
+    sizeBytes: 202109973
+  - names:
+    - nginx@sha256:bc2f6a7c8ddbccf55bdb19659ce3b0a92ca6559e86d42677a5a02ef6bda2fcef
+    - nginx:1.27.3
+    sizeBytes: 197009709
+  - names:
+    - nginx@sha256:ec4ed8b5299e5e90694af7750eb6dffd2627317d30544d056b0371f8082f7bce
+    - nginx:latest
+    sizeBytes: 181017715
+  - names:
+    - nginx@sha256:2bcabc23b45489fb0885d69a06ba1d648aeda973fae7bb981bafbb884165e514
+    - nginx:1.21
+    sizeBytes: 134469729
+  - names:
+    - registry.k8s.io/e2e-test-images/agnhost@sha256:af7e3857d87770ddb40f5ea4f89b5a2709504ab1ee31f9ea4ab5823c045f2146
+    - registry.k8s.io/e2e-test-images/agnhost:2.40
+    sizeBytes: 127547051
+  - names:
+    - nginx@sha256:f7988fb6c02e0ce69257d9bd9cf37ae20a60f1df7563c3a2a6abe24160306b8d
+    - nginx:1.14.2
+    sizeBytes: 102757429
+  - names:
+    - registry.k8s.io/kube-apiserver@sha256:011838b85f65454b95a013b2b902dd506789fd07f9abc84e52eb2b6a044cd392
+    - registry.k8s.io/kube-apiserver:v1.35.1
+    sizeBytes: 83936039
+  - names:
+    - registry.k8s.io/coredns/coredns@sha256:9b9128672209474da07c91439bf15ed704ae05ad918dd6454e5b6ae14e35fee6
+    - registry.k8s.io/coredns/coredns:v1.13.1
+    sizeBytes: 73412416
+  - names:
+    - registry.k8s.io/kube-proxy@sha256:a832f1cece7252b2e52294be5a59b7579ccde35202ad63e09e9f4f04c5676435
+    - registry.k8s.io/kube-proxy:v1.35.1
+    sizeBytes: 72496524
+  - names:
+    - registry.k8s.io/kube-controller-manager@sha256:9fb295baa9d68543d7bbecc23e16fcdf85c8c06680f91e628535aa6fbe180dbd
+    - registry.k8s.io/kube-controller-manager:v1.35.1
+    sizeBytes: 71091400
+  - names:
+    - nginx@sha256:54f2a904c251d5a34adf545a72d32515a15e08418dae0266e23be2e18c66fefa
+    - nginx:alpine
+    sizeBytes: 61564448
+  - names:
+    - registry.k8s.io/etcd@sha256:60a30b5d81b2217555e2cfb9537f655b7ba97220b99c39ee2e162a7127225890
+    - registry.k8s.io/etcd:3.6.6-0
+    sizeBytes: 59788819
+  - names:
+    - registry.k8s.io/kube-scheduler@sha256:fc251ed4b8a03830bb8f75fb5fe983b3b0b5cc15a9c066d8f6c5d2e547deece8
+    - registry.k8s.io/kube-scheduler:v1.35.1
+    sizeBytes: 48743557
+  - names:
+    - gcr.io/k8s-minikube/storage-provisioner@sha256:18eb69d1418e854ad5a19e399310e52808a8321e4c441c1dddad8977a0d7a944
+    - gcr.io/k8s-minikube/storage-provisioner:v5
+    sizeBytes: 29032448
+  - names:
+    - busybox@sha256:fd8d9aa63ba2f0982b5304e1ee8d3b90a210bc1ffb5314d980eb6962f1a9715d
+    - busybox:latest
+    sizeBytes: 4170774
+  - names:
+    - busybox@sha256:141c253bc4c3fd0a201d32dc1f493bcf3fff003b6df416dea4f41046e0f37d47
+    - busybox:1.28
+    sizeBytes: 1279385
+  - names:
+    - registry.k8s.io/busybox@sha256:545e6a6310a27636260920bc07b994a299b6708a1b26910cfefd335fdfb60d2b
+    - registry.k8s.io/busybox:1.27.2
+    sizeBytes: 1129289
+  - names:
+    - registry.k8s.io/pause@sha256:278fb9dbcca9518083ad1e11276933a2e96f23de604a3a08cc3c80002767d24c
+    - registry.k8s.io/pause:3.10.1
+    sizeBytes: 514000
+  nodeInfo:
+    architecture: arm64
+    bootID: 924d7c05-3fb2-402e-8b28-46c1682c66bd
+    containerRuntimeVersion: docker://29.2.1
+    kernelVersion: 6.12.5-linuxkit
+    kubeProxyVersion: ""
+    kubeletVersion: v1.35.1
+    machineID: e366bd4b77b9d6be2d67552f69964f40
+    operatingSystem: linux
+    osImage: Debian GNU/Linux 12 (bookworm)
+    swap:
+      capacity: 1073737728
+    systemUUID: e366bd4b77b9d6be2d67552f69964f40
+  runtimeHandlers:
+  - features:
+      recursiveReadOnlyMounts: true
+      userNamespaces: false
+    name: ""
+  - features:
+      recursiveReadOnlyMounts: true
+      userNamespaces: false
+    name: io.containerd.runc.v2
+  - features:
+      recursiveReadOnlyMounts: true
+      userNamespaces: false
+    name: runc
